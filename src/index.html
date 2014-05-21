@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="img/sheep1.jpeg">
+
+    <title>Yang Yang</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <img height="50" src="img/sheep2.jpeg" align="left" hspace="6" style="margin-left:-6p;margin-right:20px"> -->
+          <a class="navbar-brand" href="#">Yang Yang (杨洋)</a>
+        </div>
+        <div class="navbar-collapse collapse">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publication">Publications</a></li>
+          <li><a href="#award">Awards</a></li>
+        </ul>
+
+          <!--
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+          -->
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <img height="170" src="img/yang-1.jpg" align="left" hspace="6" style="margin-left:-6p;margin-right:20px">
+        <p></p>
+        <p> I am a Ph.D. student in Department of Computer Science and Technology of Tsinghua University. I am very fortunate to be co-advised by <a href="http://keg.cs.tsinghua.edu.cn/jietang/">Jie Tang</a> and <a href="http://keg.cs.tsinghua.edu.cn/persons/ljz/">Juanzi Li</a>. I obtained my bachelor degree in Software Engineering from Wuhan University in 2011. </p>
+        <p> My research interests include social network analysis and probabilistic graphical models. More specifically, I am interested in studying information diffusion process in online social networks, and learning latent knowledge from large-scale corpus. </p>
+        <p> SherlockBourne {at} gmail [dot] com </p>
+      </div>
+    </div>
+
+    <a name="research"></a>
+
+    <div class="container">
+        <div class="page-header">
+            <h2>Selected Research Work</h2>
+        <div class="page-header">
+            <h4>How Do Your Friends on Social Media Disclose Your Emotions? (AAAI'14)</h4>
+            <p style="margin:3px;">Yang Yang, Jia Jia, Shumei Zhang, Boya Wu, Qicong Chen, Juanzi Li, and Jie Tang</p>
+        </div>
+        <img width="350" src="works/emotion/overall.jpg" align="left" style="margin-left:20px;margin-right:20px">
+        <p>Mining emotions hidden in images has attracted significant interest, in particular with the rapid development of social networks. The emotional impact is very important for understanding the intrinsic meanings of images. To understand the emotional impact from images, one interesting question is: How does social effect correlate with the emotion expressed in an image? Specifically, can we leverage friends interactions (e.g., discussions) related to an image to help discover the emotions? In this paper, we formally formalize the problem and propose a novel emotion learning method by jointly modeling images posted by social users and comments added by friends. One advantage of the model is that it can distinguish those comments that are closely related to the emotion expression for an image from other irrelevant ones. Experiments on an open Flickr dataset show that the proposed model can significantly improve (+37.4% by F1) the accuracy for inferring emotions from images. More interestingly, we found that half of the improvements are due to interactions between 1% of the closest friends.</p>
+        <p style="margin-left:20px">Paper:<img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/emotion/emotion.pdf" style="margin-left:-3px; margin-right: 3px;">emotion.pdf</a> | Code: <img height="20" src="img/cpp.jpeg" style="margin-right: 3px;margin-left: -3px"><a href="works/emotion/EmotionLearn.zip" style="margin-left:-3px; margin-right: 3px;">EmotionLearn.zip</a></p>
+    </div>
+
+    <div class="container">
+        <div class="page-header">
+            <h4>Forecasting Potential Diabetes Complications (AAAI'14)</h4>
+            <p style="margin:3px;">Yang Yang, Walter Luyten, Lu Liu, Marie-Francine Moens, Jie Tang, and Juanzi Li</p>
+        </div>
+        <img width="350" src="works/complication/model.jpg" align="left" style="margin-left:20px;margin-right:20px">
+        <p>Diabetes complications often afflict diabetes patients seriously: over 68% of diabetes-related mortality is caused by diabetes complications. In this paper, we study the problem of automatically diagnosing diabetes complications from patients' lab test results. The objective problem has two main challenges: 1) feature sparseness: a patient only takes 1.26% lab tests on average, and 65.5% types of lab tests are taken by less than 10 patients; 2) knowledge skewness: it lacks comprehensive detailed domain knowledge of association between diabetes complications and lab tests.  To address these challenges, we propose a novel probabilistic model called Sparse Factor Graph Model (SparseFGM). SparseFGM projects sparse features onto a lower-dimensional latent space, which alleviates the problem of sparseness. SparseFGM is also able to capture the associations between complications and lab tests, which help handle the knowledge skewness.We evaluate the proposed model on a large collections of real medical records. SparseFGM outperforms (+20% by F1) baselines significantly and gives detailed associations between diabetes complications and lab tests. </p>
+        <p style="margin-left:20px">Paper:<img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/complication/complication.pdf" style="margin-left:-3px; margin-right: 3px;">complication.pdf</a> | Code: <img height="20" src="img/cpp.jpeg" style="margin-right: 3px;margin-left: -3px"><a href="works/complication/sparsefgm.zip" style="margin-left:-3px; margin-right: 3px;">SparseFGM.zip</a></p>
+
+    </div>
+
+    <div class="container">
+        <div class="page-header">
+            <h4>Mining Competitive Relationships by Learning across Heterogeneous
+Networks (CIKM'12)</h4>
+            <p style="margin:3px;">Yang Yang, Jie Tang, Jacklyne Keomany, Yanting Zhao, Ying Ding, Juanzi Li, and Liangwei Wang</p>
+        </div>
+        <img width="300" src="works/competitive/example.jpg" align="left" style="margin-left:50px;margin-right:50px">
+        <p> Detecting and monitoring competitors is fundamental to a company to stay ahead in the global market. Existing studies mainly focus on mining competitive relationships within a single data source, while competing information is usually distributed in multiple networks. How to discover the underlying patterns and utilize the heterogeneous knowledge to avoid biased aspects in this issue is a challenging problem. </p>
+        <p>In this paper, we study the problem of mining competitive relationships by learning across heterogeneous networks. We use Twitter and patent records as our data sources and statistically study the patterns behind the competitive relationships. We find that the two networks exhibit different but complementary patterns of competitions. Our proposed model, Topical Factor Graph Model (TFGM), defines a latent topic layer to bridge the two networks and learns a semi-supervised learning model to classify the relationships between entities (e.g., companies or products). </p>
+        <p>We test the proposed model on two real data sets and the experimental results validate the effectiveness of our model, with an average of +46% improvement over alternative methods.</p>
+        <br>
+        <p style="margin-left:20px">Paper:<img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/competitive/competitive.pdf" style="margin-left:-3px; margin-right: 3px;">competitive.pdf</a> | Code: <img height="20" src="img/cpp.jpeg" style="margin-right: 3px;margin-left: -3px"><a href="works/competitive/TFGM.zip" style="margin-left:-3px; margin-right: 3px;">TopicFGM.zip</a></p>
+    </div>
+
+<br>
+
+    <a name="publication"></a>
+
+    <div class="container">
+        <div class="page-header">
+            <h2>Full Publication List</h2>
+            <h4>(in chronological order)</h4>
+        </div>
+        <li style="margin:10px">Yang Yang, Jia Jia, Shumei Zhang, Boya Wu, Qicong Chen, Juanzi Li, Chunxiao Xing, and Jie Tang.
+	        How Do Your Friends on Social Media Disclose Your Emotions?
+            In <i>Proceedings of the 28th AAAI Conference on Artificial Intelligence</i>
+            (<a href="http://www.aaai.org/Conferences/AAAI/aaai14.php">AAAI'14</a>). 
+            [<a href="publications/AAAI14-Yang-et-al-Social-Emotion.pdf">PDF</a>] 
+            [<a href="http://arnetminer.org/emotion">Data&amp;Code</a>]
+        </li>
+        <li style="margin:10px">Yang Yang, Walter Luyten, Lu Liu, Marie-Francine Moens, Jie Tang, and Juanzi Li.
+	        Forecasting Potential Diabetes Complications.
+        In <i>Proceedings of the 28th AAAI Conference on Artificial Intelligence</i>
+            (<a href="http://www.aaai.org/Conferences/AAAI/aaai14.php">AAAI'14</a>). 
+            [<a href="publications/AAAI14-Yang-et-al-Diabetes-Pred-by-Sparse-Factor-Graph.pdf">PDF</a>] 
+            [<a href="http://arnetminer.org/diabetes">Data&amp;Code</a>]
+        </li>
+        <li style="margin:10px">Yang Yang, Jianfei Wang, Yutao Zhang, Wei Chen, Jing Zhang, Honglei Zhuang, Zhilin Yang, Bo Ma, Zhanpeng Fang, Sen Wu, Xiaoxiao Li, Debing Liu, and Jie Tang. 
+	SAE: Social Analytic Engine for Dynamic Networks. 
+In <i>Proceedings of the Ninteenth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</i>
+(<a href="http://kdd.org/kdd2013/">KDD'13</a>, demo paper). pp. 1502-1505.
+[<a href="publications/KDD13-Yang-et-al-Social-Analytic-Engine.pdf">PDF</a>] 
+[<a href="publications/KDD13-poster-SAE.pdf">Poster</a>]
+        </li>
+        <li style="margin:10px">Yang Yang, Jie Tang, Jacklyne Keomany, Yanting Zhao, Ying Ding, Juanzi Li, and Liangwei Wang.
+	Mining Competitive Relationships by Learning across Heterogeneous Networks. 
+	In <i>Proceedings of the Twenty-First Conference on
+Information and Knowledge Management</i>
+(<a href="http://www.cikm2012.org/">CIKM'12</a>). pp. 1432-1441.
+[<a href="publications/CIKM12-Yang-et-al-Mining-Competitive-Relationships.pdf">PDF</a>]
+        </li>
+        <li style="margin:10px">Jie Tang, Bo Wang, Yang Yang, Po Hu, Yanting Zhao, Xinyu Yan, Bo Gao, Minlie Huang, Peng Xu, Weichang Li, and Adam K. Usadi. 
+	PatentMiner: Topic-driven Patent Analysis and Mining. 
+In <i>Proceedings of the Eighteenth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</i>
+(<a href="http://kdd2012.sigkdd.org/">KDD'12</a>). pp. 1366-1374.
+[<a href="publications/KDD12-Tang-et-al-PatentMiner.pdf">PDF</a>]
+[<a href="publications/Jie Tang-Patentminer.pdf">Slides</a>]
+[<a href="publications/KDD2012-Tang-et-al-Patentminer.pdf">Poster</a>]
+[<a href="http://pminer.org">System</a>]
+[<a href="publications/kdd12-patentminer.mov">Video</a>]
+        </li>
+        <li style="margin:10px">Tieyun Qian, Yang Yang, Shuo Wang. Refining Graph Partitioning for Social Network Clustering. In <i> Proceeding of the Eleventh International Conference on Web Information System Engineering </i> (<a href="http://conference.cs.cityu.edu.hk/wise2010/">WISE'10</a>). pp. 77-90. 
+        [<a href="works/others/graphpartition.pdf">PDF</a>]
+        </li>
+    </div>
+    <a name="award"></a>
+
+    <div class="container">
+        <div class="page-header">
+            <h2>Selected Awards</h2>
+        </div>
+        <li style="margin:10px"> 
+        2011, awarded best graduation thesis of Wuhan University
+        </li>
+        <li style="margin:10px">
+        2009, ACM International Collegiate Programming Contest, Asia Regional, 2 gold medals
+        </li>
+        <li style="margin:10px">
+        2009, Champion of Citi Financial IT Application Competition
+        </li>
+        <li style="margin:10px">
+        2009, awarded “Ten Outstanding Young People of Wuhan University”
+        </li>
+        <li style="margin:10px">
+        2009, awarded “Ten Great Students of Luo-jia Mountain”
+        </li>
+        <li style="margin:10px">
+        2008, ACM International Collegiate Programming Contest, Asia Regional, 3 gold medals
+        </li>
+    </div>
+
+    <hr>
+
+    
+
+    <footer>
+        <p style="margin:10px;">Created by <a href=""> Yang Yang </a>, using a design from <a href="http://getbootstrap.com/"> bootstrap </a></p>
+    </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
