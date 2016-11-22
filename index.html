@@ -123,11 +123,25 @@
         </div>
         <img width="350" src="works/roleaware/active_n.jpg" align="left" style="margin-left:20px;margin-right:20px">
         <p>Information diffusion, which studies how information is propagated in social networks, has attracted considerable research effort recently. However, most existing approaches do not distinguish between different social roles that nodes may play in the diffusion process. </p>
-        <p>In this paper, we study the interplay between users’ social roles and their influence on information diffusion. In particular, we propose a generative model that integrates social role extraction and diffusion modeling into a unified framework. We then present a Gibbssampling based learning method to estimate the unknown parameters of the proposed model based on historical diffusion data. The proposed model can be applied in several scenarios. For instance, at the micro-level, the proposed model can be used to predict whether a user will repost a given message; while at the macro-level, it is able to predict both the scale and the duration of a diffusion process. We evaluate the proposed model on a real social media data set. Compared with several alternative methods, our model shows better performance in both micro- and macro-level prediction tasks.</p>
+        <p>We study the interplay between users’ social roles and their influence on information diffusion. In particular, we propose a generative model that integrates social role extraction and diffusion modeling into a unified framework. We then estimate the unknown parameters of the proposed model based on historical diffusion data. The proposed model can be applied in several scenarios. For instance, at the micro-level, the proposed model can be used to predict whether a user will repost a given message; while at the macro-level, it is able to predict both the scale and the duration of a diffusion process. We evaluate the proposed model on a real social media data set. Compared with several alternative methods, our model shows better performance in both micro- and macro-level prediction tasks.</p>
         <p style="margin-left:20px">Paper:<img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/roleaware/roleaware.pdf" style="margin-left:-3px; margin-right: 3px;">roleaware.pdf</a> | Data: <img height="20" src="img/cpp.jpeg" style="margin-right: 3px;margin-left: -3px"><a href="http://arnetminer.org/rain#b2967" style="margin-left:-3px; margin-right: 3px;">Details</a></p>
     </div>
-    <!--
+    
     <div class="container">
+        <div class="page-header">
+            <h4>Entity Matching across Heterogeneous Sources (KDD'15)</h4>
+            <p style="margin:3px;">Yang Yang, Yizhou Sun, Jie Tang, Bo Ma, and Juanzi Li</p>
+        </div>
+        <img width="350" src="works/crossmatch/example.jpg" align="left" style="margin-left:20px;margin-right:20px">
+        <p>
+        Given an entity in a source domain, finding its matched entities from another (target) domain is an important task in many applications. Traditionally, the problem was usually addressed by first extracting major keywords corresponding to the source entity and then query relevant entities from the target domain using those keywords. However, the method would inevitably fails if the two domains have less or no overlapping in the content. An extreme case is that the source domain is in English and the target domain is in Chinese. </p>
+        <p>
+In this paper, we formalize the problem as entity matching across heterogeneous sources and propose a probabilistic topic model to solve the problem. The model integrates the topic extraction and entity matching, two core subtasks for dealing with the problem, into a unified model. Specifically, for handling the text disjointing problem, we use a cross-sampling process in our model to extract topics with terms coming from all the sources, and leverage existing matching relations through latent topic layers instead of at text layers. Benefit from the proposed model, we can not only find the matched documents for a query entity, but also explain why these documents are related by showing the common topics they share. Our experiments in two real-world applications show that the proposed model can extensively improve the matching performance (+19.8% and +7.1% in two applications respectively) compared with several alternative methods.
+        </p>
+        <p style="margin-left:20px">Paper:<img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/crossmatch/crossmatch.pdf" style="margin-left:-3px; margin-right: 3px;">crossmatch.pdf</a> | Code: <img height="20" src="img/cpp.jpeg" style="margin-right: 3px;margin-left: -3px"><a href="works/crossmatch/crossmatch.zip" style="margin-left:-3px; margin-right: 3px;">crossmatch.zip</a></p>
+    </div>
+
+<div class="container">
         <div class="page-header">
             <h4>Inferring User Demographics and Social Strategies in Mobile Social Networks (KDD'14)</h4>
             <p style="margin:3px;">Yuxiao Dong, Yang Yang, Jie Tang, Yang Yang, Nitesh V. Chawla </p>
@@ -144,17 +158,7 @@ on their daily mobile communication patterns.
         </p>
         <p style="margin-left:20px">Paper:<img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/whoami/whoami.pdf" style="margin-left:-3px; margin-right: 3px;">WhoAmI.pdf</a> | Code: <img height="20" src="img/cpp.jpeg" style="margin-right: 3px;margin-left: -3px"><a href="works/whoami/whoami.zip" style="margin-left:-3px; margin-right: 3px;">WhoAmI.zip</a></p>
     </div>
-    -->
 
-    <div class="container">
-        <div class="page-header">
-            <h4>How Do Your Friends on Social Media Disclose Your Emotions? (AAAI'14)</h4>
-            <p style="margin:3px;">Yang Yang, Jia Jia, Shumei Zhang, Boya Wu, Qicong Chen, Juanzi Li, and Jie Tang</p>
-        </div>
-        <img width="350" src="works/emotion/overall.jpg" align="left" style="margin-left:20px;margin-right:20px">
-        <p>Mining emotions hidden in images has attracted significant interest, in particular with the rapid development of social networks. The emotional impact is very important for understanding the intrinsic meanings of images. To understand the emotional impact from images, one interesting question is: How does social effect correlate with the emotion expressed in an image? Specifically, can we leverage friends interactions (e.g., discussions) related to an image to help discover the emotions? In this paper, we formally formalize the problem and propose a novel emotion learning method by jointly modeling images posted by social users and comments added by friends. One advantage of the model is that it can distinguish those comments that are closely related to the emotion expression for an image from other irrelevant ones. Experiments on an open Flickr dataset show that the proposed model can significantly improve (+37.4% by F1) the accuracy for inferring emotions from images. More interestingly, we found that half of the improvements are due to interactions between 1% of the closest friends.</p>
-        <p style="margin-left:20px">Paper:<img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/emotion/emotion.pdf" style="margin-left:-3px; margin-right: 3px;">emotion.pdf</a> | Code: <img height="20" src="img/cpp.jpeg" style="margin-right: 3px;margin-left: -3px"><a href="works/emotion/EmotionLearn.zip" style="margin-left:-3px; margin-right: 3px;">EmotionLearn.zip</a></p>
-    </div>
 
     <!--
     <div class="container">
@@ -167,6 +171,7 @@ on their daily mobile communication patterns.
         <p style="margin-left:20px">Paper:<img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/complication/complication.pdf" style="margin-left:-3px; margin-right: 3px;">complication.pdf</a> | Code: <img height="20" src="img/cpp.jpeg" style="margin-right: 3px;margin-left: -3px"><a href="works/complication/sparsefgm.zip" style="margin-left:-3px; margin-right: 3px;">SparseFGM.zip</a></p>
     </div>
     -->
+    <!--
     <div class="container">
         <div class="page-header">
             <h4>Mining Competitive Relationships by Learning across Heterogeneous
@@ -180,6 +185,7 @@ Networks (CIKM'12)</h4>
         <br>
         <p style="margin-left:20px">Paper:<img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/competitive/competitive.pdf" style="margin-left:-3px; margin-right: 3px;">competitive.pdf</a> | Code: <img height="20" src="img/cpp.jpeg" style="margin-right: 3px;margin-left: -3px"><a href="works/competitive/TFGM.zip" style="margin-left:-3px; margin-right: 3px;">TopicFGM.zip</a></p>
     </div>
+    -->
 
 <br>
 
@@ -332,19 +338,19 @@ In <i>Proceedings of the Eighteenth ACM SIGKDD International Conference on Knowl
 
     <div class="container">
         <div class="page-header">
-            <h2>Advising (Current Students)</h2>
+            <h2>Advising</h2>
         </div>
+        <h5> Current Ph.D. students </h5>
         <li style="margin:10px"> 
-        Lekui Zhou (3rd year Ph.D. student)
+        Lekui Zhou (3rd year, co-advising)
         </li>
+        <h5> Current master students </h5>
         <li style="margin:10px"> 
-        Yuhong Xu (1st year master student)
+        Yuhong Xu (1st year, co-advising)
         </li>
+        <h5> Current undergraduate students </h5>
         <li style="margin:10px"> 
-        Zongtao Liu (4th year undergraduate student)
-        </li>
-        <li style="margin:10px"> 
-        Ziqiang Cheng (3rd year undergraduate student)
+        Zongtao Liu, Ziqiang Cheng
         </li>
     </div>
 
