@@ -62,19 +62,42 @@
 
     <div class="container">
         <div class="page-header">
+            <h2>Housing Price of Real Estates in Shanghai</h2>
+        </div>
+        <div class="page-header">
+        <p>
+        This dataset is crawled from <a href="https://shanghai.anjuke.com/">AnJuKe</a>, an online platform for real estate sales and renting. This dataset covers over 18K real estates at Shanghai in 2017. 
+        </p>
+        <p>In the data, each line indicate a real estate, with the following format: </p>
+        <i>
+        <p> "name" is the Chinese name of the real estate; </p>
+        <p> "price" is the average housing price of the real estate; </p>
+        <p> "latitude" and "longitude" present the location of the real estate, which is obtained from <a href="http://map.baidu.com/">Baidu Maps</a>.
+        <p></P>
+        </i>
+        <p> <span style="color:#b22222"> Please kindly cite our paper if you would like to use this dataset: </span></p>
+        <p> Yang Yang,  Zongtao Liu, Chenhao Tan, Fei Wu, and Yueting Zhuang. To Stay or to Leave: Churn Prediction for Urban Migrants in the Initial Period. In WWW'18. 2018.
+        <p><a href="works/migrant/data/housing_price.txt" style="margin-left:-3px; margin-right: 3px;">[Data Download]</a></p>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="page-header">
             <h2>Information Cascades on a Twitter Like Chinese Social Media</h2>
         </div>
         <div class="page-header">
         <p>
         This dataset is sampled from a real Twitter like Chinese social media. The sampling process is as follows: we first select top 100 source posts (ones not retweeting from others) with most retweets during Oct. 1st, 2012 to Oct. 7th, 2012 and put these posts into a set <i>V</i>. We then scan all other posts and add ones that retweet from one of the posts in <i>V</i> to <i>V</i>. The process is repeated until no more posts are newly added. In this way, we obtain a complete casacade process of those 100 source posts, involved with 96,782 posts in total. 
         </p>
-        <i> <p> In the data, each line indicates a post, with the following formate: </p>
+        <p> In the data, each line indicates a post, with the following formate: </p>
+        <i>
         <p> post_idx post_time user_id root_id root_user_id parent_id parent_user_id </p>
         <p> "post_idx" is the unique index of the post; </p>
         <p> "post_time" is the time when the post was published; </p>
         <p> "user_id" is the unique index of the user who published the post; </p>
         <p> "root_id" is the index of the source post, would be zero if the current line indicates a source post; </p>
-        <p> "root_user_id" is the user who published the source post, would be zero if the current line indicates a source post;; </p>
+        <p> "root_user_id" is the user who published the source post, would be zero if the current line indicates a source post; </p>
         <p> "parent_id" is the index of another post the current post retweeted from, would be zero if the current line indicates a source post; </p>
         <p> "parent_user_id" is the user who published the 'parent post', would be zero if the current line indicates a source post. </p>
         <p> Notice: we remove all content information due to privacy issues. </i> </p>
