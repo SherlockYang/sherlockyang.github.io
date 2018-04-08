@@ -124,7 +124,73 @@
     </div>
 
     <a name="research"></a>
+    <div class="container">
+        <div class="page-header">
+            <h2>Recent Research</h2>
+        </div>
+        <div class="page-header">
+            <h4>Representation Learning for Social Networks</h4>
+        </div>
+        <img width="310" src="works/dynamictriad/embedding.jpg" align="left" style="margin-left:20px;margin-right:20px">
+        <p>
+        Graph embedding, also known as network representation learning, aims to learn the low-dimensional representations of vertexes in a network, while structure and inherent properties of the graph is preserved. 
+        </p>
+        <p>
+        Our research mainly focuses on learning representations for social networks. 
+        Comparing with other networks, social networks have unique properties. 
+        For example, social networks are dynamic and evolving over time, caused by user interactions and unstable user relations. We study how to preserve both structural information and temporal information of a given social network, by modeling triadic closure process (<a href="works/dynamictriad/dynamic_triad.pdf">Zhou et al., AAAI'18</a>). 
+        In particular, the general idea is to impose triad, which is a group of three vertices and is one of the basic units of networks. We model how a closed triad, which consists of three vertices connected with each other, develops from
+an open triad that has two of three vertices not connected with each other. This triadic closure process is a fundamental
+mechanism in the formation and evolution of networks, thereby makes our model being able to capture the network dynamics and to learn representation vectors for each vertex at different time steps.
+        </p>
+        <p>
+        Besides, social networks are scale-free: vertex degrees of a social network follow a heavy-tailed distribution. 
+        Is it possible to reconstruct a scale-free network according to the learned vertex embedding? 
+        We first theoretically analyze the difficulty of embedding and reconstructing a scale-free network in the Euclidean
+space, by converting our problem to the sphere packing problem. 
+        Then, we propose the "degree penalty" principle for designing scale-free property preserving network embedding
+algorithm: punishing the proximity between high-degree vertexes. 
+        We introduce two implementations of our principle by utilizing the spectral techniques and a skip-gram model respectively 
+ (<a href="works/scalefree/scale_free_network_embedding.pdf">Feng et al., AAAI'18</a>). 
+        <!--We theoretically analyze the difficulty of this problem in the Euclidean space and propose the ``degree penalty'' principle for designing scale-free network embedding algorithm      -->  
+        </p>
+        <p>
+        <b>Related papers: </b>
+        (<a href="works/dynamictriad/dynamic_triad.pdf">Zhou et al., AAAI'18</a>), 
+        (<a href="works/scalefree/scale_free_network_embedding.pdf">Feng et al., AAAI'18</a>)
+        </p>
+        <p>
+        <b>Related data sets and codes: </b><a href="https://github.com/luckiezhou/DynamicTriad">[DynamicTriad]</a>
+        </p>
+    </div>
+    
+    <div class="container">
+        <div class="page-header">
+            <h4>Urban Dreams of Migrants: Study of Migrant Integration</h4>
+        </div>
+        <img width="295" src="works/migrant/graphical.png" align="left" style="margin-left:20px;margin-right:40px">
+        <p>
+        An unprecedented human mobility has driven the rapid urbanization around the world. In China, the fraction of population dwelling in cities increased from 17.9% to 52.6% between 1978 and 2012. Such large-scale migration poses both significant challenges for policymakers and important questions for researchers. 
+        </p>
+        <p>
+        To understand the process of migrant integration and help more migrants to realize their urban dreams, we have some exciting ongoing work. 
+        We first employ a user telecommunication metadata in Shanghai and study systematic differences between locals and migrants in their mobile communication networks and geographical locations (<a href="works/migrant/urban_dream.pdf">Yang et al., AAAI'18</a>). By distinguishing new migrants (who recently moved to Shanghai) from settled migrants (who have been in Shanghai for a while), we demonstrate the integration process of new migrants.
+        Moreover, we investigate migrants’ behavior in their first weeks and in particular, how their behavior relates to early departure (<a href="works/migrant/migrant_churn.pdf">Yang et al., WWW'18</a>), by further employing a novel housing price dataset. 
+        </p>
+        <p>
+        We hope that our study can encourage more researchers in our community to examine the problem of migrant integration from different perspectives and eventually lead to methodologies and applications that benefit policymaking and millions of migrants.
+        </p>
+        <p>
+        Our more computational social science studies are coming!  
+        </P>
+        <p>
+        <b>Related papers: </b>
+        (<a href="works/migrant/migrant_churn.pdf">Yang et al., WWW'18</a>), 
+        (<a href="works/migrant/urban_dream.pdf">Yang et al., AAAI'18</a>)
+        </p>
+    </div>
 
+<!--
     <div class="container">
         <div class="page-header">
             <h2>Selected Research Work</h2>
@@ -170,7 +236,7 @@ on their daily mobile communication patterns.
         </p>
         <p style="margin-left:20px">Paper:<img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/whoami/whoami.pdf" style="margin-left:-3px; margin-right: 3px;">WhoAmI.pdf</a> | Code: <img height="20" src="img/cpp.jpeg" style="margin-right: 3px;margin-left: -3px"><a href="works/whoami/whoami.zip" style="margin-left:-3px; margin-right: 3px;">WhoAmI.zip</a></p>
     </div>
-
+-->
 
     <!--
     <div class="container">
