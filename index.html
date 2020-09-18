@@ -161,6 +161,42 @@ Dynamic Shapelets" is accepted by AAAI 2020. </li>
 
     <div class="container">
         <div class="page-header">
+            <h4>Time2Graph: Revisiting Time Series Modeling from the Perspective of Graphs</h4>
+        </div>
+        <img width="310" src="works/t2g/unigraph.jpg" align="left" style="margin-left:20px;margin-right:20px">
+        <p>
+        Time series modeling has attracted extensive research efforts; however, achieving both reliable efficiency and interpretability from a unified model still remains a challenging problem. 
+        </p>
+        <p>
+        Our recent work proposes to model time series from the perspective of graphs. More specifically, we aim to capture the intrinsic factors and their transitions behind the time series, and describe how these factors affect the time series evolution. To achieve this, we respectively propose
+        the shapelet based method (<a href="works/t2g/time2graph_aaai20.pdf">Cheng et al., AAAI'20</a>) and a dynamic graph neural network based model (<a href="https://arxiv.org/abs/1905.05006">Hu et al., Preprint</a>). Time2Graph not only achieves clear improvements comparing with state-of-the-art baselines in many tasks, but also provides valuable insights towards explaining the results of prediction results.  
+        </p>
+        <p>
+        For the shapelet based method, we propose to extract <i>time-aware shapelets</i> by designing a two-level timing factor. We then define and construct the shapelet evolution graph, which captures how shapelets evolve over time and can be incorporated into the time series embeddings by graph embedding
+algorithms (<a href="works/t2g/time2graph_aaai20.pdf">Cheng et al., AAAI'20</a>).  
+        </p>
+        <p>
+        We further extend Time2Graph to a dynamic graph structure designed to systematically represent the evolving relations (edges) among states (nodes) along time, and propose the Evolutionary State Graph Network <i>(EvoNet)</i>. The general idea of EvoNet is to model both the node-level (state-to-state) and
+graph-level (segment-to-segment) propagation, and captures the node-graph (state-to-segment) interactions over time (<a href="https://arxiv.org/abs/1905.05006">Hu et al., Preprint</a>). 
+        </p>
+        <p>
+        Our research has been applied in several real-world scenarios, such as network traffic anomaly monitor, <a href="https://help.aliyun.com/document_detail/172132.html?spm=a2c4g.11186623.6.936.5f8e4633MZwHqQ">as a common service of Alicloud</a>, and electricity-theft behavior detection (<a href="works/hebr/HEBR_WWW20.pdf">Hu et al., WWW'20</a>), collaborated with Alibaba and State Grid Corporation of China.
+        </p>
+            <p>
+            <b>Related papers: </b>
+            (<a href="works/t2g/time2graph_aaai20.pdf">Cheng et al., AAAI'20</a>),
+            (<a href="works/hebr/HEBR_WWW20.pdf">Hu et al., WWW'20</a>),
+            (<a href="https://arxiv.org/abs/1905.05006">Hu et al., Preprint</a>)
+            </p>
+            <p>
+            <b>Related codes: </b><a href="https://petecheng.github.io/Time2Graph">[Time2Graph]</a>
+            </p>
+                
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="page-header">
             <h4>Representation Learning for Social Networks</h4>
         </div>
         <img width="310" src="works/dynamictriad/embedding.jpg" align="left" style="margin-left:20px;margin-right:20px">
