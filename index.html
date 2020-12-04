@@ -171,7 +171,7 @@ Dynamic Shapelets" is accepted by AAAI 2020. </li>
         </p>
         <p>
         Our recent work proposes to model time series from the perspective of graphs. More specifically, we aim to capture the intrinsic factors and their transitions behind the time series, and describe how these factors affect the time series evolution. To achieve this, we respectively propose
-        the shapelet based method (<i>Time2Graph</i>, <a href="works/t2g/time2graph_aaai20.pdf">Cheng et al., AAAI'20</a>) and a dynamic graph neural network based model (<i>EvoNet</i>, <a href="https://arxiv.org/abs/1905.05006">Hu et al., Preprint</a>). Our proposed methods not only achieves clear improvements comparing with state-of-the-art baselines in many tasks, but also provide valuable insights towards explaining the results of prediction results.  
+        the shapelet based method (<i>Time2Graph</i>, <a href="works/t2g/time2graph_aaai20.pdf">Cheng et al., AAAI'20</a>) and a dynamic graph neural network based model (<i>EvoNet</i>, <a href="works/t2g/evonet_wsdm21.pdf">Hu et al., WSDM'21</a>). Our proposed methods not only achieves clear improvements comparing with state-of-the-art baselines in many tasks, but also provide valuable insights towards explaining the results of prediction results.  
         </p>
         <!--
         <p>
@@ -189,11 +189,12 @@ graph-level (segment-to-segment) propagation, and captures the node-graph (state
             <p>
             <b>Related papers: </b>
             (<a href="works/t2g/time2graph_aaai20.pdf">Cheng et al., AAAI'20</a>),
-            (<a href="works/hebr/HEBR_WWW20.pdf">Hu et al., WWW'20</a>),
-            (<a href="https://arxiv.org/abs/1905.05006">Hu et al., Preprint</a>)
+            (<a href="works/t2g/evonet_wsdm21.pdf">Hu et al., WSDM'21</a>),
+            (<a href="works/hebr/HEBR_WWW20.pdf">Hu et al., WWW'20</a>)
             </p>
             <p>
-            <b>Related codes: </b><a href="https://petecheng.github.io/Time2Graph">[Time2Graph]</a>
+            <b>Related codes: </b><a href="https://petecheng.github.io/Time2Graph">[Time2Graph]</a>, <a href="https://github.com/zjunet/EvoNet">[EvoNet]</a>
+
             </p>
                 
         </div>
@@ -287,16 +288,29 @@ algorithm: punishing the proximity between high-degree vertexes.
         </li>
         -->
         <font size="3">
+            <b>2021</b>
+        </font>
+        <li style="margin:10px">
+        <a href="https://vachelhu.github.io/">Wenjie Hu</a>, <b>Yang Yang</b>, Ziqiang Cheng, <a href="http://jiyang3.web.engr.illinois.edu/">Carl Yang</a> and <a href="http://ink-ron.usc.edu/xiangren/">Xiang Ren</a>. 
+        Modeling Combinatorial Evolution in Time Series Prediction.
+        In <i>Proceedings of the Fourteenth ACM International Conference on Web Search and Data Mining</i>
+        (<a href="http://www.wsdm-conference.org/2021/">WSDM'21</a>), 2021.
+        [<a href="works/t2g/evonet_wsdm21.pdf">PDF</a>]
+        [<a href="https://github.com/zjunet/EvoNet">Code</a>]
+        [<a href="https://help.aliyun.com/document_detail/172132.html?spm=a2c4g.11186623.6.1107.578371bdiiqDwk">Demo</a>]
+        </li>
+        
+        <font size="3">
             <b>2020</b>
         </font>
-        <li style="margin:10px">Ziqiang Cheng,<b> Yang Yang</b>, Wei Wang, Wenjie Hu, Yueting Zhuang, and Guojie Song.  
+        <li style="margin:10px">Ziqiang Cheng,<b> Yang Yang</b>, Wei Wang, Wenjie Hu, Yueting Zhuang and Guojie Song.  
         Time2Graph: Revisiting Time Series Modeling with Dynamic Shapelets. 
         In <i> Proceedings of the 32nd AAAI Conference on Artificial Intelligence </i>
             (<a href="https://aaai.org/Conferences/AAAI-20/">AAAI'20</a>), 2020.
             [<a href="works/t2g/time2graph_aaai20.pdf">PDF</a>]
             [<a href="https://github.com/petecheng/Time2Graph">Code</a>]
         </li>
-        <li style="margin:10px">Wenjie Hu,<b> Yang Yang</b>, Jianbo Wang, Xuanwen Huang, and Ziqiang Cheng.  
+        <li style="margin:10px">Wenjie Hu,<b> Yang Yang</b>, Jianbo Wang, Xuanwen Huang and Ziqiang Cheng.  
         Understanding Electricity-Theft Behavior via Multi-Source Data. 
         In <i> Proceedings of the 29th World Wide Web Conference</i>
             (<a href="https://www2020.thewebconf.org/">WWW'20</a>), 2020.
@@ -311,23 +325,17 @@ algorithm: punishing the proximity between high-degree vertexes.
             <!--[<a href="https://github.com/zjunet/HEBR">Code</a>]-->
         </li>
         <li style="margin:10px">
-        Xiaobin Tang, <a href="https://xiaojingzi.github.io/">Jing Zhang</a>, Bo Chen, <b> Yang Yang</b>, Hong Chen, and Cuiping Li. 
+        Xiaobin Tang, <a href="https://xiaojingzi.github.io/">Jing Zhang</a>, Bo Chen, <b> Yang Yang</b>, Hong Chen and Cuiping Li. 
         BERT-INT: A BERT-based Interaction Model For Knowledge Graph Alignment. 
         In <i> Proceedings of the 30th International Joint Conference on Artificial Intelligence</i>
             (<a href="https://www.ijcai20.org/">IJCAI'20</a>), 2020.
             [<a href="works/bert-int/InteractionKA.pdf">PDF</a>]
         </li>
         <li style="margin:10px">
-        Wenjie Hu, <b>Yang Yang</b>, Liang Wu, Zongtao Liu, Zhanlin Sun, and Bingshen Yao. 
+        Wenjie Hu, <b>Yang Yang</b>, Liang Wu, Zongtao Liu, Zhanlin Sun and Bingshen Yao. 
         Capturing Evolution Genes for Time Series Data. 
         <i>Preprint</i>. 
         [<a href="https://arxiv.org/abs/1905.05004">arxiv</a>]
-        </li>
-        <li style="margin:10px">
-        Wenjie Hu, <b>Yang Yang</b>, Zilong You, Zongtao Liu, Ji Yang, and Xiang Ren. 
-        Modeling Combinatorial Evolution in Time Series Prediction.
-        <i>Preprint</i>. 
-        [<a href="https://arxiv.org/abs/1905.05006">arxiv</a>]
         </li>
 
          <font size="3">
