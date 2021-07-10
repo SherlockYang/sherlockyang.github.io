@@ -154,7 +154,7 @@ Dynamic Shapelets" is accepted by AAAI 2020. </li>
         </p>
         <p>
         Our recent work proposes to model time series from the perspective of graphs. More specifically, we aim to capture the intrinsic factors and their transitions behind the time series, and describe how these factors affect the time series evolution. To achieve this, we respectively propose
-        the shapelet based method (<i>Time2Graph</i>, <a href="works/t2g/time2graph_aaai20.pdf">Cheng et al., AAAI'20</a>) and a dynamic graph neural network based model (<i>EvoNet</i>, <a href="works/t2g/evonet_wsdm21.pdf">Hu et al., WSDM'21</a>). Our proposed methods not only achieves clear improvements comparing with state-of-the-art baselines in many tasks, but also provide valuable insights towards explaining the results of prediction results.  
+        the shapelet based method (<i>Time2Graph</i>, <a href="works/t2g/time2graph_aaai20.pdf">Cheng et al., AAAI'20</a>; <i>Time2Graph+</i>, <a href="works/t2g/time2graphplus_tkde21.pdf">Cheng et al., TKDE'21</a>) and a dynamic graph neural network based model (<i>EvoNet</i>, <a href="works/t2g/evonet_wsdm21.pdf">Hu et al., WSDM'21</a>). Our proposed methods not only achieves clear improvements comparing with state-of-the-art baselines in many tasks, but also provide valuable insights towards explaining the results of prediction results.  
         </p>
         <!--
         <p>
@@ -171,12 +171,47 @@ graph-level (segment-to-segment) propagation, and captures the node-graph (state
         </p>
             <p>
             <b>Related papers: </b>
+            (<a href="works/t2g/time2graphplus_tkde21.pdf">Cheng et al., TKDE'21</a>), 
             (<a href="works/t2g/time2graph_aaai20.pdf">Cheng et al., AAAI'20</a>),
             (<a href="works/t2g/evonet_wsdm21.pdf">Hu et al., WSDM'21</a>),
             (<a href="works/hebr/HEBR_WWW20.pdf">Hu et al., WWW'20</a>)
             </p>
             <p>
-            <b>Related codes: </b><a href="https://petecheng.github.io/Time2Graph">[Time2Graph]</a>, <a href="https://github.com/zjunet/EvoNet">[EvoNet]</a>
+            <b>Related codes: </b>
+            <a href="https://petecheng.github.io/Time2Graph">[Time2Graph]</a>, 
+            <a href="https://github.com/petecheng/Time2GraphPlus">[Time2Graph+]</a>, 
+            <a href="https://github.com/zjunet/EvoNet">[EvoNet]</a>
+            </p>                
+        </div>
+
+
+        <div class="container">
+            <div class="page-header">
+                <h4>Learning Robust Graph Models</h4>
+            </div>
+        <img width="310" src="img/enhance.gif" align="left" style="margin-left:20px;margin-right:20px">
+        <p>
+        Network data in real-world tends to be error-prone due to incomplete sampling or imperfect measurements. This in turn results in inaccurate results when performing network analysis or modeling, such as node classiﬁcation and link prediction, on these ﬂawed networks. 
+        </p>
+        <p>
+        Our research aims to reconstruct a reliable network from a ﬂawed one, a process referred to <i>network enhancement</i>. 
+        More speciﬁcally, network enhancement aims to detect the noisy links that are observed in the network but should not exist in the real world, as well as to complement the missing links that do indeed exist in the real world yet remain unobserved.
+        </p>
+        From one perspective, we turns the network enhancement problem into edge sequences generation, and employ a deep reinforcement learning framework to solve it, which takes advantage of
+        downstream task to guide the network denoising process (NetRL, <a href="">Xu et al., TKDE'21</a>). 
+        From another perspective, we construct a self-supervised learning framework that identifies missing links and nosiy links simultaneously by leveraging the mutual influence of them (E-Net, <a href="works/robust/tkde2020_robust_xu.pdf">Xu et al., TKDE'20</a>)
+        </p>
+        <p> 
+        Moreover, we study the model robutness against adversarial attacks. Our work shows that even without any information about the target model,  one can still perform effective attacks (<a href="https://arxiv.org/pdf/2012.06757.pdf">Xu et al., arxiv</a>). 
+        To handle such perturbations, we further propose an unsupervised defense technique to robustify pre-trained deep graph models (<a href="https://arxiv.org/pdf/2012.02486.pdf">Xu et al., arxiv</a>). 
+        </p>
+            <p>
+            <b>Related papers: </b>
+            (<a href="works/robust/tkde2020_robust_xu.pdf">Xu et al., TKDE'20</a>),
+            (<a href="">Xu et al., TKDE'21</a>). 
+            </p>
+            <p>
+            <b>Related codes: </b><a href="https://github.com/galina0217/NetRL">[NetRL]</a>, <a href="https://github.com/galina0217/E-Net">[E-Net]</a>
             </p>                
         </div>
 
@@ -301,9 +336,11 @@ algorithm: punishing the proximity between high-degree vertexes.
         In <i>  IEEE Transaction on Knowledge and Data Engineering</i> (TKDE), 2021 (accepted). 
         </li>
         <li style="margin:10px">
-        <a href="https://petecheng.github.io/">Ziqiang Cheng</a>, <b>Yang Yang</b>, Shuo Jiang, Wenjie Hu, Zhangchi Ying and Ziwei Chai. 
+        <a href="https://petecheng.github.io/">Ziqiang Cheng</a>, <b>Yang Yang</b>, Shuo Jiang, Wenjie Hu, Zhangchi Ying, Ziwei Chai and Chunping Wang. 
         Time2Graph+: Bridging Time Series and Graph Representation Learning via Multiple Attentions. 
-        In <i>  IEEE Transaction on Knowledge and Data Engineering</i> (TKDE), 2021 (accepted). 
+        In <i>  IEEE Transaction on Knowledge and Data Engineering</i> (TKDE), 2021. 
+        [<a href="works/t2g/time2graphplus_tkde21.pdf">PDF</a>]
+        [<a href="https://github.com/petecheng/Time2GraphPlus">Code</a>]
         </li>
         <li style="margin:10px">
         Xuanwen Huang, <b>Yang Yang</b>, <a href="https://petecheng.github.io/">Ziqiang Cheng</a>, Shen Fan, Zhongyao Wang, Juren Li, Jun Zhang and  Jingmin Chen.
@@ -313,7 +350,7 @@ algorithm: punishing the proximity between high-degree vertexes.
         [<a href="works/taocode/SIGIR21_Taocode_Diffusion.pdf">PDF</a>]
         </li>
         <li style="margin:10px">
-        Ping Shao, <b>Yang Yang</b>, Shengyao Xu, Xuan Yang, Chunping Wang, Jintao Su. 
+        Ping Shao, <b>Yang Yang</b>, Shengyao Xu, Xuan Yang, Chunping Wang and Jintao Su. 
         Network Embedding via Motifs. 
         In <i>ACM Transactions on Knowledge Discovery from Data </i>(<a href="http://tkdd.acm.org/">TKDD</a>), 2021 (accepted).
         </li>
