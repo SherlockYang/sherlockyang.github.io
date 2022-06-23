@@ -97,15 +97,15 @@
             <h4>What's New</h4>
             <li style="margin:10px"> <b>We have a few open positions for <a target="_blank"  href="postdoc.html">postdoctoral</a>.  <a target="_blank"  href="postdoc.html">Please read this for details.</a> </b> </li>
             <li style="margin:10px"> <b>[Jun. 2022]</b> We release <a href="https://dgraph.xinye.com/introduction"><b>DGraph</b></a>, a benchmark for dynamic graphs with labelled finicial frauds in real world. </li>
-            <li style="margin:10px"> <b>[May. 2022]</b> "BrainNet: Epileptic Wave Detection from SEEG with Hierarchical Graph Diffusion Learning" is accepted by KDD. </li>
-            <li style="margin:10px"> <b>[Apr. 2022]</b> "Can Abnormality be Detected by Graph Neural Networks?" is accepted by IJCAI. </li>
-            <li style="margin:10px"> <b>[Apr. 2022]</b> "Beyond Homophily: Structure-aware Path Aggregation Graph Neural Network" is accepted by IJCAI. </li>
+            <li style="margin:10px"> <b>[May. 2022]</b> "<a target="_blank" href="works/brainnet/KDD22_BrainNet.pdf">BrainNet: Epileptic Wave Detection from SEEG with Hierarchical Graph Diffusion Learning</a>" is accepted by KDD. </li>
+            <li style="margin:10px"> <b>[Apr. 2022]</b> "<a target="_blank" href="works/gnn/IJCAI22_Abnormality.pdf">Can Abnormality be Detected by Graph Neural Networks?</a>" is accepted by IJCAI. </li>
+            <li style="margin:10px"> <b>[Apr. 2022]</b> "<a target="_blank" href="works/gnn/IJCAI22_Beyond.pdf">Beyond Homophily: Structure-aware Path Aggregation Graph Neural Network</a>" is accepted by IJCAI. </li>
             <li style="margin:10px"> <b>[Feb. 2022]</b> "<a target="_blank"  href="works/taocode/TKDE22_rising_star.pdf">Who's Next: Rising Star Prediction via Diffusion of User Interest in Social Networks</a>" is accepted by TKDE. </li>
+            <!--
             <li style="margin:10px"> <b>[Dec. 2021]</b> "<a target="_blank"  href=”https://arxiv.org/pdf/2012.02486.pdf“>Unsupervised Adversarially Robust Representation Learning on Graphs</a>" is accepted by AAAI. </li>
             <li style="margin:10px"> <b>[Dec. 2021]</b> "<a target="_blank"  href="https://arxiv.org/pdf/2012.06757.pdf">Blindfolded Attackers Still Threatning: Strict Black-Box Adversarial Attacks on Graphs</a>" is accepted by AAAI. </li>
             <li style="margin:10px"> <b>[Oct. 2021]</b> <a target="_blank"  href="https://galina0217.github.io/">Jiarong Xu</a> passes PhD defense and joins Fudan University as assistant professor. Congratulations Prof. Xu!</li>
-            <!--
-                        <li style="margin:10px"> <b>[Jun. 2021]</b> Our paper "<a target="_blank"  href="works/robust/tkde2021_netrl.pdf">NetRL: Task-aware Network Denoising via Deep Reinforcement Learning</a>" is accepted by TKDE. </li>
+            <li style="margin:10px"> <b>[Jun. 2021]</b> Our paper "<a target="_blank"  href="works/robust/tkde2021_netrl.pdf">NetRL: Task-aware Network Denoising via Deep Reinforcement Learning</a>" is accepted by TKDE. </li>
             <li style="margin:10px"> <b>[May. 2021]</b> Our paper "<a href="works/t2g/time2graphplus_tkde21.pdf">Time2Graph+: Bridging Time Series and Graph Representation Learning via Multiple Attentions</a>" is accepted by TKDE. </li>
             <li style="margin:10px"> <b>[Apr. 2021]</b> Our paper "<a href="works/taocode/SIGIR21_Taocode_Diffusion.pdf">How Powerful are Interest Diffusion on Purchasing Prediction: A Case Study of Taocode</a>" is accepted by SIGIR. </li>
             <li style="margin:10px"> <b>[Feb. 2021]</b> I am serving as the sponsorship co-chair of the Web Conference (WWW) 2021. <a href="https://www2021.thewebconf.org/sponsor/">If you are interested in sponsoring us, please read this. </a> </li>
@@ -137,6 +137,44 @@ Dynamic Shapelets" is accepted by AAAI 2020. </li>
             <h2>Recent Research</h2>
         </div>
         
+        <div class="page-header">
+            <h4>Anomaly Detection in Graphs</h4>
+        </div>
+        <img width="310" src="img/abnormal.jpg" align="left" style="margin-left:20px;margin-right:20px">
+        <p>
+        The goal is to understand and detect abnormal vertexes (e.g., users with anomalous behaviors) in large-scale social and information networks. 
+        Generally, we study the question of <i>can abnormality be detected by graph neural networks?</i> Despite the fact that GNN has emerging as a powerful tool for modeling graph data, we find that most GNNs fail to identify abnormalities emprically. We further explore the reason behind this phenomenon in both spectral and spatial view of GNNs and propose the improving methods respectively (<a target="_blank" href="works/gnn/IJCAI22_Abnormality.pdf">Chai et al., IJCAI'22</a>, <a target="_blank" href="works/gnn/IJCAI22_Beyond.pdf">Sun et al., IJCAI'22</a>). 
+        </p>
+        <p>
+        Our work has been widely applied in many scenarios. In telecommunications field, we propose to spot telemarketing frauds, with an emphasis on unveiling the "precise fraud" phenomenon and the strategies that are used by fraudsters to precisely select targets (<a target="_blank" href="works/works/telecom_fraud/TKDE_Fraud_Yang.pdf">Yang et al., TKDE'19</a>). 
+        Our study is conducted on a one-month complete dataset of telecommunication metadata in Shanghai with 54 million anonymous users and 698 million call logs. 
+        </p>
+        <p>
+        In financial field, we unearth the correlation between users' anomalous behaviors and their communication network structure in an online lending platform. 
+        Moreover, we propose a novel problem: how to identify muti-type fraudsters (<a target="_blank" href="works/loan_fraud/cikm19_loan.pdf">Yang et al., CIKM'19</a>)?  
+        Our proposed framework can uniformly identify two types of frauds: 
+        default borrowers, who will default on a loan to the platform,  
+        and cheating agents, who recruit and teach borrowers to cheat by providing false information and faking application materials.  
+        </p>
+        <p>
+        <b>Papers: </b>
+        (<a target="_blank" href="works/gnn/IJCAI22_Abnormality.pdf">Chai et al., IJCAI'22</a>), 
+        (<a target="_blank" href="works/gnn/IJCAI22_Beyond.pdf">Sun et al., IJCAI'22</a>), 
+        (<a target="_blank" href="works/telecom_fraud/TKDE_Fraud_Yang.pdf">Yang et al., TKDE'19</a>), 
+        (<a target="_blank" href="works/loan_fraud/cikm19_loan.pdf">Yang et al., CIKM'19</a>)
+        </p>
+        <p>
+        <b>Codes: </b>
+        [<a target="_blank" href="https://github.com/zjunet/AMNet">AMNet</a>], 
+        [<a target="_blank" href="https://github.com/zjunet/PathNet">PathNet</a>]
+        </p>
+        <p>
+        <b>Benchmark:</b> 
+        [<a href="https://dgraph.xinye.com/introduction">DGraph</a>]
+        </p>                
+    </div>
+
+
         <div class="container">
             <div class="page-header">
                 <h4>Time2Graph: Revisiting Time Series Modeling from the Perspective of Graphs</h4>
@@ -163,14 +201,14 @@ graph-level (segment-to-segment) propagation, and captures the node-graph (state
         Our work has been applied in real-world scenarios, such as network traffic anomaly monitor, <a target="_blank"  href="https://help.aliyun.com/document_detail/172132.html?spm=a2c4g.11186623.6.936.5f8e4633MZwHqQ">as a common service of Alicloud</a>, and electricity-theft behavior detection (<a target="_blank"  href="works/hebr/HEBR_WWW20.pdf">Hu et al., WWW'20</a>), collaborated with Alibaba and State Grid Corporation of China.
         </p>
             <p>
-            <b>Related papers: </b>
+            <b>Papers: </b>
             (<a target="_blank"  href="works/t2g/time2graphplus_tkde21.pdf">Cheng et al., TKDE'21</a>), 
             (<a target="_blank" href="works/t2g/time2graph_aaai20.pdf">Cheng et al., AAAI'20</a>),
             (<a target="_blank" href="works/t2g/evonet_wsdm21.pdf">Hu et al., WSDM'21</a>),
             (<a target="_blank" href="works/hebr/HEBR_WWW20.pdf">Hu et al., WWW'20</a>)
             </p>
             <p>
-            <b>Related codes: </b>
+            <b>Codes: </b>
             <a target="_blank" href="https://petecheng.github.io/Time2Graph">[Time2Graph]</a>, 
             <a target="_blank" href="https://github.com/petecheng/Time2GraphPlus">[Time2Graph+]</a>, 
             <a target="_blank" href="https://github.com/zjunet/EvoNet">[EvoNet]</a>
@@ -199,44 +237,19 @@ graph-level (segment-to-segment) propagation, and captures the node-graph (state
         To handle such perturbations, we further propose an unsupervised defense technique to robustify pre-trained deep graph models (<a target="_blank" href="works/robust/aaai22_robust.pdf">Xu et al., AAAI'22b</a>). 
         </p>
             <p>
-            <b>Related papers: </b>
+            <b>Papers: </b>
             (<a target="_blank" href="works/robust/tkde2020_robust_xu.pdf">Xu et al., TKDE'20</a>),
             (<a target="_blank" href="works/robust/tkde2021_netrl.pdf">Xu et al., TKDE'21</a>),  
             (<a target="_blank" href="works/robust/aaai22_blindfolded_attack.pdf">Xu et al., AAAI'22a</a>),  
             (<a target="_blank" href="works/robust/aaai22_robust.pdf">Xu et al., AAAI'22b</a>).
             </p>
             <p>
-            <b>Related codes & benchmark: </b><a target="_blank" href="https://github.com/galina0217/NetRL">[NetRL]</a>, <a target="_blank" href="https://github.com/galina0217/E-Net">[E-Net]</a>, 
+            <b>Codes & benchmark: </b><a target="_blank" href="https://github.com/galina0217/NetRL">[NetRL]</a>, <a target="_blank" href="https://github.com/galina0217/E-Net">[E-Net]</a>, 
             [<a target="_blank" href="https://cogdl.ai/grb/home">Graph Robustness Benchmark</a>]
              </p>                
         </div>
 
-        <div class="page-header">
-            <h4>Anomaly Detection in Large-Scale Networks</h4>
-        </div>
-        <img width="310" src="img/abnormal.jpg" align="left" style="margin-left:20px;margin-right:20px">
-        <p>
-        The goal is to understand and detect abnormal vertexes (e.g., users with anomalous behaviors) in large-scale social and information networks. 
-        Our work has been widely applied in many scenarios.
-        </p>
-        <p>
-        In telecommunications field, we propose to spot telemarketing frauds, with an emphasis on unveiling the "precise fraud" phenomenon and the strategies that are used by fraudsters to precisely select targets (<a target="_blank" href="works/works/telecom_fraud/TKDE_Fraud_Yang.pdf">Yang et al., TKDE'19</a>). 
-        Our study is conducted on a one-month complete dataset of telecommunication metadata in Shanghai with 54 million anonymous users and 698 million call logs. 
-        </p>
-        <p>
-        In financial field, we unearth the correlation between users' anomalous behaviors and their communication network structure in an online lending platform. 
-        Moreover, we propose a novel problem: how to identify muti-type fraudsters (<a target="_blank" href="works/loan_fraud/cikm19_loan.pdf">Yang et al., CIKM'19</a>)?  
-        Our proposed framework can uniformly identify two types of frauds: 
-        default borrowers, who will default on a loan to the platform,  
-        and cheating agents, who recruit and teach borrowers to cheat by providing false information and faking application materials.  
-        </p>
-        <p>
-        <b>Related papers: </b>
-        (<a target="_blank" href="works/telecom_fraud/TKDE_Fraud_Yang.pdf">Yang et al., TKDE'19</a>), 
-        (<a target="_blank" href="works/loan_fraud/cikm19_loan.pdf">Yang et al., CIKM'19</a>) 
-        </p>
-    </div>
-
+    <!--
     <div class="container">
         <div class="page-header">
             <h4>Representation Learning for Social Networks</h4>
@@ -262,7 +275,6 @@ space, by converting our problem to the sphere packing problem.
 algorithm: punishing the proximity between high-degree vertexes. 
         We introduce two implementations of our principle by utilizing the spectral techniques and a skip-gram model respectively 
  (<a target="_blank" href="works/scalefree/scale_free_network_embedding.pdf">Feng et al., AAAI'18</a>). 
-        <!--We theoretically analyze the difficulty of this problem in the Euclidean space and propose the ``degree penalty'' principle for designing scale-free network embedding algorithm      -->  
         </p>
         <p>
         <b>Related papers: </b>
@@ -275,7 +287,6 @@ algorithm: punishing the proximity between high-degree vertexes.
         </p>
     </div>
     
-    <!--
     <div class="container">
         <div class="page-header">
             <h4>Urban Dreams of Migrants: Study of Migrant Integration</h4>
