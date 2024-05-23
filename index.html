@@ -195,12 +195,51 @@ Dynamic Shapelets" is accepted by AAAI 2020. </li>
         </p>
         <p>
         <b>Papers: </b>
-        (<a target="_blank" href="works/brainnet/KDD22_BrainNet.pdf">Chen et al., KDD'22</a>)
-        (<a target="_blank" href="works/brainnet/KDD23_MBrain.pdf">Cai et al., KDD'23</a>)
-        (<a target="_blank" href="works/brainnet/NeurIPS23_PPi.pdf">Yuan et al., NeurIPS'23</a>)
+        (<a target="_blank" href="works/brainnet/KDD22_BrainNet.pdf">Chen et al., KDD'22</a>), 
+        (<a target="_blank" href="works/brainnet/KDD23_MBrain.pdf">Cai et al., KDD'23</a>), 
+        (<a target="_blank" href="works/brainnet/NeurIPS23_PPi.pdf">Yuan et al., NeurIPS'23</a>), 
         (<a target="_blank" href="works/brainnet/NeurIPS23_Brant.pdf">Zhang et al., NeurIPS'23</a>)
         </p>
 
+        <div class="page-header">
+            <h4>Exploring Foundation Model for Graphs</h4>
+        </div>
+        <img width="310" src="img/graphfm.jpg" align="left" style="margin-left:20px;margin-right:20px">
+        <p>
+        Building a graph foundation model aims to pre-train a general graph model using a large corpus of graph data. With appropriate fine-tuning, such a graph foundation model can achieve satisfactory performance across various downstream tasks, showcasing its broad application potential and the numerous challenges it entails. 
+        </p>
+        <p>
+        To achieve this goal, we design base graph models with enhanced expressive capabilities (<a target="_blank" href="works/gnn/AAAI23_DropMessage.pdf">Fang et al., AAAI'23</a>; <a target="_blank" href="works/gnn/IJCAI22_Beyond.pdf">Sun et al., IJCAI'22</a>) and investigate how to select appropriate pre-training corpora (<a target="_blank" href="works/graph_pretrain/KDD23_When_to_Pre-Train.pdf">Cao et al., KDD'23</a>; <a target="_blank" href="works/gnn/NeurIPS23_Less.pdf">Xu et al., NeurIPS'23</a>). We also conduct an in-depth study on the crucial role of pre-training strategies in the construction of the graph foundation model and analyze existing graph self-supervised methods from a unified perspective (<a target="_blank" href="works/gnn/ICML2024_Correlation_SSL.pdf">Fang et al., ICML'24</a>). When adapting the pre-trained graph foundation model to downstream tasks, we explore the intrinsic factors that determine the model's final performance (<a target="_blank" href="works/gnn/AAAI24_Tuning.pdf">Sun et al., AAAI'24</a>; <a target="_blank" href="works/gnn/AAAI24_Measuring.pdf">Huang et al., AAAI'24</a>) and design various effective and parameter-efficient adaptation methods (<a target="_blank" href="works/gnn/NeurIPS23_Prompt.pdf">Fang et al., NeurIPS'23</a>; Huang et al., KDD'24). Additionally, we have released a large-scale dynamic graph financial network pre-training dataset, DGraph (<a target="_blank" href="works/dgraph/dgraph_2022.pdf">Huang et al., NeurIPS'22</a>), addressing the lack of graph datasets in this field.
+        </p>
+        <p>
+        <b>Papers: </b>
+        (<a target="_blank" href="works/gnn/AAAI23_DropMessage.pdf">Fang et al., AAAI'23</a>), 
+        (<a target="_blank" href="works/graph_pretrain/KDD23_When_to_Pre-Train.pdf">Cao et al., KDD'23</a>), 
+        (<a target="_blank" href="works/gnn/NeurIPS23_Less.pdf">Xu et al., NeurIPS'23</a>), 
+        (<a target="_blank" href="works/gnn/ICML2024_Correlation_SSL.pdf">Fang et al., ICML'24</a>), 
+        (<a target="_blank" href="works/gnn/AAAI24_Tuning.pdf">Sun et al., AAAI'24</a>), 
+        (<a target="_blank" href="works/gnn/IJCAI22_Beyond.pdf">Sun et al., IJCAI'22</a>), 
+        (<a target="_blank" href="works/gnn/AAAI24_Measuring.pdf">Huang et al., AAAI'24</a>), 
+        (<a target="_blank" href="works/gnn/NeurIPS23_Prompt.pdf">Fang et al., NeurIPS'23</a>), 
+        (<a target="_blank" href="works/dgraph/dgraph_2022.pdf">Huang et al., NeurIPS'22</a>)
+        </p>
+        <p>
+        <b>Codes: </b>
+        [<a target="_blank" href="https://github.com/zjunet/DropMessage">DropMessage</a>]
+        [<a target="_blank" href="https://github.com/zjunet/GraphTCM">GraphTCM</a>]
+        [<a target="_blank" href="https://github.com/zjunet/GPF">GPF</a>]
+        [<a target="_blank" href="https://github.com/zjunet/G-Tuning">G-Tuning</a>]
+        [<a target="_blank" href="https://github.com/zjunet/W2PGNN">W2PGNN</a>]
+        [<a target="_blank" href="https://github.com/zjunet/PathNet">PathNet</a>]
+        </p>
+        <p>
+        <b>Benchmark:</b> 
+        [<a href="https://dgraph.xinye.com/introduction">DGraph</a>]
+        </p>                
+        </div>
+
+        <!--
+        <div class="container">
         <div class="page-header">
             <h4>Anomaly Detection in Graphs</h4>
         </div>
@@ -238,7 +277,6 @@ Dynamic Shapelets" is accepted by AAAI 2020. </li>
         </p>                
     </div>
 
-
         <div class="container">
             <div class="page-header">
                 <h4>Time2Graph: Revisiting Time Series Modeling from the Perspective of Graphs</h4>
@@ -251,17 +289,6 @@ Dynamic Shapelets" is accepted by AAAI 2020. </li>
         Our recent work proposes to model time series from the perspective of graphs. More specifically, we aim to capture the intrinsic factors and their transitions behind the time series, and describe how these factors affect the time series evolution. To achieve this, we respectively propose
         the shapelet based method (<i>Time2Graph</i>, <a target="_blank"  href="works/t2g/time2graph_aaai20.pdf">Cheng et al., AAAI'20</a>; <i>Time2Graph+</i>, <a target="_blank"  href="works/t2g/time2graphplus_tkde21.pdf">Cheng et al., TKDE'21</a>) and a dynamic graph neural network based model (<i>EvoNet</i>, <a target="_blank"  href="works/t2g/evonet_wsdm21.pdf">Hu et al., WSDM'21</a>). Our proposed methods not only achieves clear improvements comparing with state-of-the-art baselines in many tasks, but also provide valuable insights towards explaining the results of prediction results.  
         </p>
-        <!--
-        <p>
-        For the shapelet based method, we propose to extract <i>time-aware shapelets</i> by designing a two-level timing factor. We then define and construct the shapelet evolution graph, which captures how shapelets evolve over time and can be incorporated into the time series embeddings by graph embedding
-algorithms (<a target="_blank"  href="works/t2g/time2graph_aaai20.pdf">Cheng et al., AAAI'20</a>).  
-        </p>
-        <p>
-        We further extend Time2Graph to a dynamic graph structure designed to systematically represent the evolving relations (edges) among states (nodes) along time, and propose the Evolutionary State Graph Network <i>(EvoNet)</i>. The general idea of EvoNet is to model both the node-level (state-to-state) and
-graph-level (segment-to-segment) propagation, and captures the node-graph (state-to-segment) interactions over time (<a target="_blank"  href="https://arxiv.org/abs/1905.05006">Hu et al., Preprint</a>). 
-        </p>
-        <p>
-        -->
         Our work has been applied in real-world scenarios, such as network traffic anomaly monitor, <a target="_blank"  href="https://help.aliyun.com/document_detail/172132.html?spm=a2c4g.11186623.6.936.5f8e4633MZwHqQ">as a common service of Alicloud</a>, and electricity-theft behavior detection (<a target="_blank"  href="works/hebr/HEBR_WWW20.pdf">Hu et al., WWW'20</a>), collaborated with Alibaba and State Grid Corporation of China.
         </p>
             <p>
@@ -278,7 +305,6 @@ graph-level (segment-to-segment) propagation, and captures the node-graph (state
             <a target="_blank" href="https://github.com/zjunet/EvoNet">[EvoNet]</a>
             </p>                
         </div>
-
 
         <div class="container">
             <div class="page-header">
@@ -312,6 +338,7 @@ graph-level (segment-to-segment) propagation, and captures the node-graph (state
             [<a target="_blank" href="https://cogdl.ai/grb/home">Graph Robustness Benchmark</a>]
              </p>                
         </div>
+    -->
 
     <!--
     <div class="container">
@@ -444,7 +471,7 @@ algorithm: punishing the proximity between high-degree vertexes.
             Measuring Task Similarity and Its Implication in Fine-Tuning Graph Neural Networks. 
             In <i>Proceedings of the 35th AAAI Conference on Artificial Intelligence </i> (<a target="_blank" href="https://aaai.org/Conferences/AAAI-24/">AAAI'24</a>), 2024.  
             [<a target="_blank" href="works/gnn/AAAI24_Measuring.pdf">PDF</a>] 
-            [<a target="_blank" href="https://github.com/zjunet/Bridge-Tune">Code</a>] 
+            <!--[<a target="_blank" href="https://github.com/zjunet/Bridge-Tune">Code</a>] -->
         </li>
         <li style="margin:10px">
             Chenglu Pan, <a target="_blank" href="https://galina0217.github.io">Jiarong Xu</a>, Yue Yu, Ziqi Yang, Qingbiao Wu, Chunping Wang, Lei Chen, and <b>Yang Yang</b>. 
