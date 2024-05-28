@@ -209,7 +209,11 @@ Dynamic Shapelets" is accepted by AAAI 2020. </li>
         Building a graph foundation model aims to pre-train a general graph model using a large corpus of graph data. With appropriate fine-tuning, such a graph foundation model can achieve satisfactory performance across various downstream tasks, showcasing its broad application potential and the numerous challenges it entails. 
         </p>
         <p>
-        To achieve this goal, we design base graph models with enhanced expressive capabilities (<a target="_blank" href="works/gnn/AAAI23_DropMessage.pdf">Fang et al., AAAI'23</a>; <a target="_blank" href="works/gnn/IJCAI22_Beyond.pdf">Sun et al., IJCAI'22</a>) and investigate how to select appropriate pre-training corpora (<a target="_blank" href="works/graph_pretrain/KDD23_When_to_Pre-Train.pdf">Cao et al., KDD'23</a>; <a target="_blank" href="works/gnn/NeurIPS23_Less.pdf">Xu et al., NeurIPS'23</a>). We also conduct an in-depth study on the crucial role of pre-training strategies in the construction of the graph foundation model and analyze existing graph self-supervised methods from a unified perspective (<a target="_blank" href="works/gnn/ICML2024_Correlation_SSL.pdf">Fang et al., ICML'24</a>). When adapting the pre-trained graph foundation model to downstream tasks, we explore the intrinsic factors that determine the model's final performance (<a target="_blank" href="works/gnn/AAAI24_Tuning.pdf">Sun et al., AAAI'24</a>; <a target="_blank" href="works/gnn/AAAI24_Measuring.pdf">Huang et al., AAAI'24</a>) and design various effective and parameter-efficient adaptation methods (<a target="_blank" href="works/gnn/NeurIPS23_Prompt.pdf">Fang et al., NeurIPS'23</a>; Huang et al., KDD'24). Additionally, we have released a large-scale dynamic graph financial network pre-training dataset, DGraph (<a target="_blank" href="works/dgraph/dgraph_2022.pdf">Huang et al., NeurIPS'22</a>), addressing the lack of graph datasets in this field.
+        To achieve this goal, we design base graph models with enhanced expressive capabilities (<i><a target="_blank" href="https://github.com/zjunet/DropMessage">DropMessage</a></i>, <a target="_blank" href="works/gnn/AAAI23_DropMessage.pdf">Fang et al., AAAI'23</a>; <i><a target="_blank" href="https://github.com/zjunet/PathNet">PathNet</a></i>, <a target="_blank" href="works/gnn/IJCAI22_Beyond.pdf">Sun et al., IJCAI'22</a>) and investigate how to select appropriate pre-training corpora
+        (<i><a target="_blank"
+               href="https://github.com/zjunet/W2PGNN">W2PGNN</a></i>, <a target="_blank" href="works/graph_pretrain/KDD23_When_to_Pre-Train.pdf">Cao et al., KDD'23</a>; <a target="_blank" href="works/gnn/NeurIPS23_Less.pdf">Xu et al., NeurIPS'23</a>). We also conduct an in-depth study on the crucial role of pre-training strategies in the construction of the graph foundation model and analyze existing graph self-supervised methods from a unified perspective (<i><a target="_blank"
+               href="https://github.com/zjunet/GraphTCM">GraphTCM</a></i>, <a target="_blank" href="works/gnn/ICML2024_Correlation_SSL.pdf">Fang et al., ICML'24</a>). When adapting the pre-trained graph foundation model to downstream tasks, we explore the intrinsic factors that determine the model's final performance (<i><a target="_blank" href="https://github.com/zjunet/G-Tuning">G-Tuning</a></i>, <a target="_blank" href="works/gnn/AAAI24_Tuning.pdf">Sun et al., AAAI'24</a>; <i><a target="_blank"
+               href="https://github.com/zjunet/Bridge-Tune">Bridge-Tune</a></i>, <a target="_blank" href="works/gnn/AAAI24_Measuring.pdf">Huang et al., AAAI'24</a>) and design various effective and parameter-efficient adaptation methods (<i><a target="_blank" href="https://github.com/zjunet/GPF">GPF</a></i>, <a target="_blank" href="works/gnn/NeurIPS23_Prompt.pdf">Fang et al., NeurIPS'23</a>; Huang et al., KDD'24). Additionally, we have released a large-scale dynamic graph financial network pre-training dataset, <a href="https://dgraph.xinye.com/introduction">DGraph</a> (<a target="_blank" href="works/dgraph/dgraph_2022.pdf">Huang et al., NeurIPS'22</a>), addressing the lack of graph datasets in this field.
         </p>
         <p>
         <b>Papers: </b>
@@ -226,14 +230,15 @@ Dynamic Shapelets" is accepted by AAAI 2020. </li>
         <p>
         <b>Codes: </b>
         [<a target="_blank" href="https://github.com/zjunet/DropMessage">DropMessage</a>]
+        [<a target="_blank" href="https://github.com/zjunet/W2PGNN">W2PGNN</a>]
         [<a target="_blank" href="https://github.com/zjunet/GraphTCM">GraphTCM</a>]
         [<a target="_blank" href="https://github.com/zjunet/GPF">GPF</a>]
         [<a target="_blank" href="https://github.com/zjunet/G-Tuning">G-Tuning</a>]
-        [<a target="_blank" href="https://github.com/zjunet/W2PGNN">W2PGNN</a>]
         [<a target="_blank" href="https://github.com/zjunet/PathNet">PathNet</a>]
+        [<a target="_blank" href="https://github.com/zjunet/Bridge-Tune">Bridge-Tune</a>] 
         </p>
         <p>
-        <b>Benchmark:</b> 
+        <b>Dataset:</b> 
         [<a href="https://dgraph.xinye.com/introduction">DGraph</a>]
         </p>                
         </div>
@@ -471,7 +476,7 @@ algorithm: punishing the proximity between high-degree vertexes.
             Measuring Task Similarity and Its Implication in Fine-Tuning Graph Neural Networks. 
             In <i>Proceedings of the 35th AAAI Conference on Artificial Intelligence </i> (<a target="_blank" href="https://aaai.org/Conferences/AAAI-24/">AAAI'24</a>), 2024.  
             [<a target="_blank" href="works/gnn/AAAI24_Measuring.pdf">PDF</a>] 
-            <!--[<a target="_blank" href="https://github.com/zjunet/Bridge-Tune">Code</a>] -->
+            [<a target="_blank" href="https://github.com/zjunet/Bridge-Tune">Code</a>] 
         </li>
         <li style="margin:10px">
             Chenglu Pan, <a target="_blank" href="https://galina0217.github.io">Jiarong Xu</a>, Yue Yu, Ziqi Yang, Qingbiao Wu, Chunping Wang, Lei Chen, and <b>Yang Yang</b>. 
