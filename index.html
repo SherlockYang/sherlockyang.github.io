@@ -109,8 +109,8 @@
             <li style="margin:10px"> <b>[May. 2024]</b> "<!--<a target="_blank" href="works/gnn/.pdf">-->Unveiling Privacy Vulnerabilities: Investigating the Role of Structure in Graph Data</a>" is accepted by KDD.</li>
             <li style="margin:10px"> <b>[May. 2024]</b> "<!--<a target="_blank" href="works/gnn/.pdf">-->Chromosomal Structural Abnormality Diagnosis by Homologous Similarity</a>" is accepted by KDD.</li>
             <li style="margin:10px"> <b>[May. 2024]</b> "<!--<a target="_blank" href="works/gnn/.pdf">-->An Expert is Worth One Token: Synergizing Multiple Expert LLMs as Generalist via Expert Token Routing</a>" is accepted by ACL.</li>
-             <li style="margin:10px"> <b>[May. 2024]</b> "<!--<a target="_blank" href="works/gnn/.pdf">-->InfiAgent-DABench: Evaluating Agents on Data Analysis Tasks</a>" is accepted by ACL.</li>
             <li style="margin:10px"> <b>[May. 2024]</b> "<a target="_blank" href="works/gnn/ICML2024_Correlation_SSL.pdf">Exploring Correlations of Self-supervised Tasks for Graphs</a>" is accepted by ICML.</li>
+            <li style="margin:10px"> <b>[May. 2024]</b> "<a target="_blank" href="works/llm/InfiAgent_DABench-0529.pdf">InfiAgent-DABench: Evaluating Agents on Data Analysis Tasks</a>" is accepted by ICML.</li>
             <li style="margin:10px"> <b>[Apr. 2024]</b> "<a target="_blank" href="works/domain/IJCAI24_DWLR.pdf">DWLR: Domain Adaptation under Label Shift for Wearable Sensor</a>" is accepted by IJCAI.</li>
             <li style="margin:10px"> <b>[Apr. 2024]</b> "<a target="_blank" href="works/domain/IJCAI24_disentangling.pdf">Disentangling Domain and General Representations for Time Series Classification</a>" is accepted by IJCAI.</li>
             <li style="margin:10px"> <b>[Jan. 2024]</b> "<a target="_blank" href="works/gnn/WWW24_GraphSkeleton.pdf">Graph-Skeleton: ∼1% Nodes are Sufficient to Represent
@@ -175,13 +175,23 @@ Dynamic Shapelets" is accepted by AAAI 2020. </li>
         </div>
         
         <div class="page-header">
-            <h4>Modeling Intracranial Neural Signals</h4>
+            <h4>Exploring Foundation Model for Brain Signals</h4>
         </div>
         <img width="310" src="img/brainnet2.jpg" align="left" style="margin-left:20px;margin-right:20px">
         <p>
+        We aim to establish a universal model for brain signals, enhancing performance in various downstream tasks within the healthcare domain while empowering a quantitative understanding of brain activity in neuroscience.
+        </P>
+        <p>
+        Starting from a real medical scenario of seizure detection, we automatically identify epileptic waves in intracranial brain signals for medication-resistant patients, expediting the localization of lesions within the brain. Inspired by neuroscience research, we initially model the diffusion patterns of epileptic waves for individual patients (<i>BrainNet</i>, <a target="_blank"  href="works/brainnet/KDD22_BrainNet.pdf">Chen et al., KDD'22</a>). Subsequently, we employ self-supervised learning to capture universal spatiotemporal correlations between signals from different brain regions, facilitating transferability across different patients (<i>MBrain</i>, <a target="_blank" href="works/brainnet/KDD23_MBrain.pdf">Cai et al., KDD'23</a>; <i>PPi</i>, <a target="_blank" href="works/brainnet/NeurIPS23_PPi.pdf">Yuan et al., NeurIPS'23</a>).
+        </p>
+        <p>
+        To establish a foundational model, we initially endeavor to pretrain a foundational model with 500M parameters based on a large volume of intracranial brain signals (<i>Brant</i>, <a target="_blank" href="works/brainnet/NeurIPS23_Brant.pdf">Zhang et al., NeurIPS'23</a>). Subsequently, we integrate EEG into the pretraining corpus, building a foundational model with 1B parameters, thereby generalizing to a broader range of downstream tasks such as sleep staging and emotion recognition (<i>Brant-2</i>, <a target="_blank" href="https://arxiv.org/abs/2402.10251">arXiv:2402.10251</a>). 
+        Capitalizing on the robust generalization capabilities of Brant-2, we propose a unified alignment framework (<i>Brant-X</i>) to rapidly adapt Brant-2 to downstream tasks involving rare physiological signals (e.g., EOG/ECG/EMG). 
+        In our pursuit to construct a universal foundational model, we recognize the necessity for a comprehensive dataset encompassing a wide array of domains. Confronted with the rarity of brain signal data, we delve into a diffusion-based model, for the generation of intracranial brain signals (<i>NeuralDiff</i>). Moreover, we innovate to synthesize endless sequences, thereby circumventing the dependence on actual data (<i>InfoBoost</i>, <a target="_blank" href="http://arxiv.org/abs/2402.00607">arXiv:2402.00607</a>). 
+        </p>
+        <!--
         The goal is to model intracranial neural signals to empower neural science with the ability to understand brain activities quantitatively. 
         At this stage, we put our focus on serving epilepsy patients, shorterning their treatment cycle by automatically identifying epileptic foci.  
-        <!--we focus on exploring the scenario of automatical epileptic waves identfication to reduce the the mechanical labor of neurosurgeons and shortening the treatment cycle based on Stereoelectroencephalography (SEEG) records.-->
         </p>
         <p>
         Epilepsy is one of the most common and serious neurological disorders, affecting approximately 65 million people worldwide. One-third of patients are medication-resistant, and surgical resection of the lesion tissue through neurosurgery is necessary. 
@@ -193,12 +203,15 @@ Dynamic Shapelets" is accepted by AAAI 2020. </li>
         To further achieve transferability between different individuals, we propose to learn generalized and individual-independent representations for brain signals via self-supervised pre-training based on capturing spatio-temporal correlations among signals (<i>MBrain</i>, <a target="_blank" href="works/brainnet/KDD23_MBrain.pdf">Cai et al., KDD'23</a>; <i>PPi</i>, <a target="_blank" href="works/brainnet/NeurIPS23_PPi.pdf">Yuan et al., NeurIPS'23</a>). 
         With the continue extention of both our collected data and downstream tasks, we are working on pre-training foundation model with large parameters (<i>Brant</i>, <a target="_blank" href="works/brainnet/NeurIPS23_Brant.pdf">Zhang et al., NeurIPS'23</a>). 
         </p>
+        -->
         <p>
         <b>Papers: </b>
         (<a target="_blank" href="works/brainnet/KDD22_BrainNet.pdf">Chen et al., KDD'22</a>), 
         (<a target="_blank" href="works/brainnet/KDD23_MBrain.pdf">Cai et al., KDD'23</a>), 
         (<a target="_blank" href="works/brainnet/NeurIPS23_PPi.pdf">Yuan et al., NeurIPS'23</a>), 
-        (<a target="_blank" href="works/brainnet/NeurIPS23_Brant.pdf">Zhang et al., NeurIPS'23</a>)
+        (<a target="_blank" href="works/brainnet/NeurIPS23_Brant.pdf">Zhang et al., NeurIPS'23</a>), 
+        (<a target="_blank" href="https://arxiv.org/abs/2402.10251">Brant-2, arXiv:2402.10251</a>), 
+        (<a target="_blank" href="http://arxiv.org/abs/2402.00607">InfoBoost, arXiv:2402.00607</a>). 
         </p>
 
         <div class="page-header">
@@ -206,14 +219,17 @@ Dynamic Shapelets" is accepted by AAAI 2020. </li>
         </div>
         <img width="310" src="img/graphfm.jpg" align="left" style="margin-left:20px;margin-right:20px">
         <p>
-        Building a graph foundation model aims to pre-train a general graph model using a large corpus of graph data. With appropriate fine-tuning, such a graph foundation model can achieve satisfactory performance across various downstream tasks, showcasing its broad application potential and the numerous challenges it entails. 
+        The goal is to pre-train a general graph foudnation model using a large corpus of graph data. With appropriate fine-tuning, such a graph foundation model can achieve satisfactory performance across various downstream tasks, showcasing its broad application potential and the numerous challenges it entails. 
         </p>
         <p>
         To achieve this goal, we design base graph models with enhanced expressive capabilities (<i><a target="_blank" href="https://github.com/zjunet/DropMessage">DropMessage</a></i>, <a target="_blank" href="works/gnn/AAAI23_DropMessage.pdf">Fang et al., AAAI'23</a>; <i><a target="_blank" href="https://github.com/zjunet/PathNet">PathNet</a></i>, <a target="_blank" href="works/gnn/IJCAI22_Beyond.pdf">Sun et al., IJCAI'22</a>) and investigate how to select appropriate pre-training corpora
         (<i><a target="_blank"
                href="https://github.com/zjunet/W2PGNN">W2PGNN</a></i>, <a target="_blank" href="works/graph_pretrain/KDD23_When_to_Pre-Train.pdf">Cao et al., KDD'23</a>; <a target="_blank" href="works/gnn/NeurIPS23_Less.pdf">Xu et al., NeurIPS'23</a>). We also conduct an in-depth study on the crucial role of pre-training strategies in the construction of the graph foundation model and analyze existing graph self-supervised methods from a unified perspective (<i><a target="_blank"
                href="https://github.com/zjunet/GraphTCM">GraphTCM</a></i>, <a target="_blank" href="works/gnn/ICML2024_Correlation_SSL.pdf">Fang et al., ICML'24</a>). When adapting the pre-trained graph foundation model to downstream tasks, we explore the intrinsic factors that determine the model's final performance (<i><a target="_blank" href="https://github.com/zjunet/G-Tuning">G-Tuning</a></i>, <a target="_blank" href="works/gnn/AAAI24_Tuning.pdf">Sun et al., AAAI'24</a>; <i><a target="_blank"
-               href="https://github.com/zjunet/Bridge-Tune">Bridge-Tune</a></i>, <a target="_blank" href="works/gnn/AAAI24_Measuring.pdf">Huang et al., AAAI'24</a>) and design various effective and parameter-efficient adaptation methods (<i><a target="_blank" href="https://github.com/zjunet/GPF">GPF</a></i>, <a target="_blank" href="works/gnn/NeurIPS23_Prompt.pdf">Fang et al., NeurIPS'23</a>; Huang et al., KDD'24). Additionally, we have released a large-scale dynamic graph financial network pre-training dataset, <a href="https://dgraph.xinye.com/introduction">DGraph</a> (<a target="_blank" href="works/dgraph/dgraph_2022.pdf">Huang et al., NeurIPS'22</a>), addressing the lack of graph datasets in this field.
+               href="https://github.com/zjunet/Bridge-Tune">Bridge-Tune</a></i>, <a target="_blank" href="works/gnn/AAAI24_Measuring.pdf">Huang et al., AAAI'24</a>) and design various effective and parameter-efficient adaptation methods (<i><a target="_blank" href="https://github.com/zjunet/GPF">GPF</a></i>, <a target="_blank" href="works/gnn/NeurIPS23_Prompt.pdf">Fang et al., NeurIPS'23</a>; Huang et al., KDD'24). 
+        </p>
+        <p>
+        Additionally, we have released a large-scale dynamic graph financial network pre-training dataset, <a href="https://dgraph.xinye.com/introduction">DGraph</a> (<a target="_blank" href="works/dgraph/dgraph_2022.pdf">Huang et al., NeurIPS'22</a>), addressing the lack of graph datasets in this field.
         </p>
         <p>
         <b>Papers: </b>
@@ -230,12 +246,12 @@ Dynamic Shapelets" is accepted by AAAI 2020. </li>
         <p>
         <b>Codes: </b>
         [<a target="_blank" href="https://github.com/zjunet/DropMessage">DropMessage</a>]
+        [<a target="_blank" href="https://github.com/zjunet/PathNet">PathNet</a>]
         [<a target="_blank" href="https://github.com/zjunet/W2PGNN">W2PGNN</a>]
         [<a target="_blank" href="https://github.com/zjunet/GraphTCM">GraphTCM</a>]
-        [<a target="_blank" href="https://github.com/zjunet/GPF">GPF</a>]
         [<a target="_blank" href="https://github.com/zjunet/G-Tuning">G-Tuning</a>]
-        [<a target="_blank" href="https://github.com/zjunet/PathNet">PathNet</a>]
         [<a target="_blank" href="https://github.com/zjunet/Bridge-Tune">Bridge-Tune</a>] 
+        [<a target="_blank" href="https://github.com/zjunet/GPF">GPF</a>]
         </p>
         <p>
         <b>Dataset:</b> 
@@ -443,6 +459,14 @@ algorithm: punishing the proximity between high-degree vertexes.
             [<a target="_blank" href="https://github.com/zjunet/GraphTCM">Code</a>] 
         </li>
         <li style="margin:10px">
+            Xueyu Hu, Ziyu Zhao, Shuang Wei, Ziwei Chai, Qianli Ma, GuoyinWang, Xuwu Wang, Jing Su, Jingjing Xu, Ming Zhu, Yao Cheng, Jianbo Yuan, 
+            Jiwei Li, Kun Kuang, <b>Yang Yang</b>, Hongxia Yang, and Fei Wu. 
+            InfiAgent-DABench: Evaluating Agents on Data Analysis Tasks. 
+            In <i>Proceedings of the 41st International Conference on Machine Learning </i> (<a target="_blank" href="https://icml.cc/Conferences/2024">ICML'24</a>).
+            [<a target="_blank" href="works/llm/InfiAgent_DABench-0529.pdf">PDF</a>] 
+            [<a target="_blank" href="https://github.com/InfiAgent/InfiAgent">InfiAgent</a>] 
+        </li>
+        <li style="margin:10px">
             Haoran Deng, <b>Yang Yang</b>, Jiahe Li, Cheng Chen, Weihao Jiang, and Shiliang Pu. 
             Fast Updating Truncated SVD for Representation Learning with Sparse Matrices. 
             In <i>Proceedings of the 13th International Conference on Learning Representations </i> (<a target="_blank" href="https://iclr.cc/Conferences/2024">ICLR'24</a>), 2024.  
@@ -465,6 +489,20 @@ algorithm: punishing the proximity between high-degree vertexes.
             [<a target="_blank" href="https://github.com/zjunet/GraphAdapter">Code</a>] 
         </li>
         <li style="margin:10px">
+            Juren Li, <b>Yang Yang</b>, Youmin Chen, Jianfeng Zhang, Zeyu Lai, and Lujia Pan.  
+            DWLR: Domain Adaptation under Label Shift for Wearable Sensor. 
+            In <i>Proceedings of the 33rd International Joint Conference on Artificial Intelligence</i> (<a target="_blank" href="https://ijcai24.org">IJCAI'24</a>), 2024.  
+            [<a target="_blank" href="works/domain/IJCAI24_DWLR.pdf">PDF</a>] 
+            [<a target="_blank" href="https://github.com/JuRenGithub/DWLR">Code</a>] 
+        </li>
+        <li style="margin:10px">
+            Youmin Chen*, Xinyu Yan*, <b>Yang Yang</b>, Jianfeng Zhang, Jing Zhang, Lujia Pan, and Juren Li. 
+            Disentangling Domain and General Representations for Time Series Classification. 
+            In <i>Proceedings of the 33rd International Joint Conference on Artificial Intelligence</i> (<a target="_blank" href="https://ijcai24.org">IJCAI'24</a>), 2024 (*: equal contribution).  
+            [<a target="_blank" href="works/domain/IJCAI24_disentangling.pdf">PDF</a>] 
+            [<a target="_blank" href="https://github.com/IJCAI-CADT/cadt">Code</a>] 
+        </li>
+        <li style="margin:10px">
             <a target="_blank" href="https://sunefei.github.io/">Yifei Sun</a>, Qi Zhu, <b>Yang Yang</b>, Chunping Wang, Tianyu Fan, Jiajun Zhu, and Lei Chen. 
             Fine-tuning Graph Neural Networks by Preserving Graph Generative Patterns. 
             In <i>Proceedings of the 35th AAAI Conference on Artificial Intelligence </i> (<a target="_blank" href="https://aaai.org/Conferences/AAAI-24/">AAAI'24</a>), 2024.  
@@ -483,21 +521,7 @@ algorithm: punishing the proximity between high-degree vertexes.
             Towards Fair Graph Federated Learning via Incentive Mechanisms. 
             In <i>Proceedings of the 35th AAAI Conference on Artificial Intelligence </i> (<a target="_blank" href="https://aaai.org/Conferences/AAAI-24/">AAAI'24</a>), 2024.  
             [<a target="_blank" href="works/gnn/AAAI24_Federated.pdf">PDF</a>] 
-            <!--[<a target="_blank" href="https://github.com/zjunet/FairGraphFL">Code</a>] -->
-        </li>
-        <li style="margin:10px">
-            Juren Li, <b>Yang Yang</b>, Youmin Chen, Jianfeng Zhang, Zeyu Lai, and Lujia Pan.  
-            DWLR: Domain Adaptation under Label Shift for Wearable Sensor. 
-            In <i>Proceedings of the 33rd International Joint Conference on Artificial Intelligence</i> (<a target="_blank" href="https://ijcai24.org">IJCAI'24</a>), 2024.  
-            [<a target="_blank" href="works/domain/IJCAI24_DWLR.pdf">PDF</a>] 
-            [<a target="_blank" href="https://github.com/JuRenGithub/DWLR">Code</a>] 
-        </li>
-        <li style="margin:10px">
-            Youmin Chen*, Xinyu Yan*, <b>Yang Yang</b>, Jianfeng Zhang, Jing Zhang, Lujia Pan, and Juren Li. 
-            Disentangling Domain and General Representations for Time Series Classification. 
-            In <i>Proceedings of the 33rd International Joint Conference on Artificial Intelligence</i> (<a target="_blank" href="https://ijcai24.org">IJCAI'24</a>), 2024 (*: equal contribution).  
-            [<a target="_blank" href="works/domain/IJCAI24_disentangling.pdf">PDF</a>] 
-            [<a target="_blank" href="https://github.com/IJCAI-CADT/cadt">Code</a>] 
+            [<a target="_blank" href="https://github.com/zjunet/FairGraphFL">Code</a>]
         </li>
         <font size="3">
             <b>2023</b>
