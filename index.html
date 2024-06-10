@@ -179,7 +179,7 @@ Dynamic Shapelets" is accepted by AAAI 2020. </li>
         </div>
         <img width="310" src="img/brainnet2.jpg" align="left" style="margin-left:20px;margin-right:20px">
         <p>
-        We aim to establish a universal model for brain signals, enhancing performance in various downstream tasks within the healthcare domain while empowering a quantitative understanding of brain activity in neuroscience.
+        The goal is to establish a universal model for brain signals, enhancing performance in various downstream tasks within the healthcare domain while empowering a quantitative understanding of brain activity in neuroscience.
         </P>
         <p>
         Starting from a real medical scenario of seizure detection, we automatically identify epileptic waves in intracranial brain signals for medication-resistant patients, expediting the localization of lesions within the brain. Inspired by neuroscience research, we initially model the diffusion patterns of epileptic waves for individual patients (<i>BrainNet</i>, <a target="_blank"  href="works/brainnet/KDD22_BrainNet.pdf">Chen et al., KDD'22</a>). Subsequently, we employ self-supervised learning to capture universal spatiotemporal correlations between signals from different brain regions, facilitating transferability across different patients (<i>MBrain</i>, <a target="_blank" href="works/brainnet/KDD23_MBrain.pdf">Cai et al., KDD'23</a>; <i>PPi</i>, <a target="_blank" href="works/brainnet/NeurIPS23_PPi.pdf">Yuan et al., NeurIPS'23</a>).
@@ -254,6 +254,42 @@ Dynamic Shapelets" is accepted by AAAI 2020. </li>
         <p>
         <b>Dataset:</b> 
         [<a href="https://dgraph.xinye.com/introduction">DGraph</a>]
+        </p>                
+        </div>
+
+        <div class="container">
+        <div class="page-header">
+            <h4>Collaboration Dynamics of Large Language Models</h4>
+        </div>
+        <img width="310" src="img/llm.jpg" align="left" style="margin-left:20px;margin-right:20px">
+        <p>
+        The goal is to enhance the versatility of Large Language Models (LLMs) across specialized domains. Driven by the reality that many real-world applications, such as financial risk management and power grid scheduling, demand a multidisciplinary strategy, we take inspiration from human ingenuity. Humans have a remarkable ability to navigate complex issues by integrating a wide array of expertise through collaborative efforts. With this in mind, we explore the dynamics of LLMs when they collaborate with domain-specific models to tackle challenging real-world problems. 
+        </p>
+        <p>
+        We embark on our journey by examining the synergy between LLMs and Graph Neural Networks (GNNs). GNNs are inherently crafted for processing graph data, a prevalent format in real-world scenarios. We investigate how LLMs can collaborate with GNN to boost its graph reasoning capability (<i><a target="_blank" href="https://github.com/mistyreed63849/Graph-LLM">GraphLLM</a></i>, <a target="_blank" href="https://arxiv.org/abs/2310.05845">arXiv:2310.05845</a>). Additionally, we study the
+        possibility of LLMs and GNNs collaborating through an innovative framework that positions GNNs as a unique class of adapter modules (<i><a target="_blank" href="https://github.com/zjunet/GraphAdapter">GraphAdapter</a></i>, <a target="_blank" href="works/gnn/WWW24_GraphAdapter.pdf">Huang et al., WWW'24</a>). Furthermore, we explore how LLMs can collaborate specialized agents (<i><a target="_blank" href="https://github.com/zjunet/ETR">ETR</a></i>, <a target="_blank" href="works/llm/An_expert_is_worth_one_token_ACL24.pdf">Chai et al.,
+            ACL'24</a>), where a unified generalist framework is built to facilitate seamless integration of multiple expert LLMs. 
+
+        In addition to our theoretical explorations, we have launched key datasets to assess LLMs in specific domains. 
+        For graph-related tasks, we introduce a new dataset from social media, merging text and graph data (<a target="_blank" href="works/gnn/WWW24_GraphAdapter.pdf">Huang et al., WWW'24</a>). 
+        Additionally, for analyzing LLM-based agents' data analytics capabilities, we publish the InfiAgent-DABench benchmark (<i><a target="_blank" href="https://github.com/InfiAgent/InfiAgent">InfiAgent</a></i>, <a target="_blank" href="works/llm/InfiAgent_DABench-0529.pdf">Hu et al., ICML'24</a>). 
+        </p>
+        <p>
+        <b>Papers: </b>
+        [<a target="_blank" href="works/llm/An_expert_is_worth_one_token_ACL24.pdf">Chai et al., ACL'24</a>] 
+        (<a target="_blank" href="works/gnn/WWW24_GraphAdapter.pdf">Huang et al., WWW'24</a>), 
+        (<a target="_blank" href="works/llm/InfiAgent_DABench-0529.pdf">Hu et al., ICML'24</a>), 
+        (<a target="_blank" href="https://arxiv.org/abs/2310.05845">GraphLLM, arXiv:2310.05845</a>). 
+        </p>
+        <p>
+        <b>Codes: </b>
+        [<a target="_blank" href="https://github.com/zjunet/ETR">ETR</a>],
+        [<a target="_blank" href="https://github.com/mistyreed63849/Graph-LLM">GraphLLM</a>], 
+        [<a target="_blank" href="https://github.com/zjunet/GraphAdapter">GraphAdapter</a>]
+        </p>
+        <p>
+        <b>Benchmark:</b> 
+        [<a target="_blank" href="https://github.com/InfiAgent/InfiAgent">InfiAgent</a>]
         </p>                
         </div>
 
